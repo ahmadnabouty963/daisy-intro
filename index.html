@@ -8,11 +8,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>My DaisyUi Intro</title>
+    <title>NEO_HACK</title>
   </head>
 
   <body>
-    <div class="navbar bg-base-100 shadow-sm">
+    <div role="navigation" class="navbar bg-base-100 shadow-sm">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -50,40 +50,40 @@
     </ul>
   </div>
   <div class="navbar-end gap-3">
-    <button onclick="login.showModal()" class="btn  border-green-500 hover:bg-green-500 hover:border-black  btn-outline" >LOG IN</button>
-    <button onclick="signup.showModal()" class="btn  border-green-500 hover:bg-green-500 hover:border-black  btn-outline">SIGN UP</button>
+    <button aria-label="log-in" onclick="login.showModal()" class="btn  border-green-500 hover:bg-green-500 hover:border-black  btn-outline" >LOG IN</button>
+    <button aria-label="sign-up" onclick="signup.showModal()" class="btn  border-green-500 hover:bg-green-500 hover:border-black  btn-outline">SIGN UP</button>
   </div>
 </div>
     <main class="container mx-auto px-6 ">
         <section id="hero">
     <div class=" mt-10 mb-10 pt-5">
-      <h3 class="animate-pulse drop-shadow-[0_0_20px] text-3xl font-extrabold justify-center flex">
+      <h1 class="animate-pulse drop-shadow-[0_0_20px] text-3xl font-extrabold justify-center flex">
         Hallo ich bin Neo
-      </h3>
+      </h1>
     </div>
-    <div class="card lg:card-side bg-base-100 shadow-sm">
+    <div class="card lg:card-side bg-base-100 shadow-sm overflow-hidden">
       <figure>
         <img
-          class="border-2 border-green-500"
+          class="border-2 border-green-500 w-full object-cover"
           src="src/matrix.png"
-          alt="Album"
+          alt="Matrix"
         />
       </figure>
       <div class="card-body">
-        <h2 class="card-title">It's Old but Gold</h2>
+        <h1 class="card-title">It's Old but Gold</h1>
         <p>
           THE ONE AND ONLY!<br />
           NEO HAT ER UNS PROGRAMIEREN BEIGEBRACHT!<br />KALI LINUX?<br />NGROK?<br />THE
           FATRAT?<br />EVILDROID?
         </p>
-        <img src="src/neo.jpeg"/>
+        <img alt="Neo" src="src/neo.jpeg"/>
         <h4 class="text-2xl font-extrabold">MIT UNS LERNST DU ALLES!</h4>
         <h4>
           ACHTUNG!WENN DU DIESES BUTTON KLICKST, LANDEST DU DANN DIREKT IN EINER
           ANDEREN WELT!
         </h4>
         <div class="card-actions justify-end">
-          <button id="travel" onclick="window.open('travel.html')" class=" border-green-500 hover:bg-green-500 hover:border-black btn btn-outline">Travel</button>
+          <button aria-label="tavel-button" id="travel" onclick="window.open('travel.html')" class=" border-green-500 hover:bg-green-500 hover:border-black btn btn-outline">Travel</button>
         </div>
       </div>
     </div>
@@ -94,33 +94,33 @@
     </div>
     </section>
     </main>
-    <div id="courses" class="items-center justify-center flex-col"  >
-      <h3 class="my-30 ml-45 font-extrabold text-3xl">Real-world offensive & defensive cyber security training and more...</h3>
-    <p class="mx-45 my-25 ">Access over 900 training labs and learning pathways suited to all levels, <br>from the complete beginner to the seasoned hacker. <br><span class="font-bold animate-pulse drop-shadow-[0_0_20px]">NEO COURSES </span> makes learning engaging, entertaining, accessible, and affordable.</p>    
+    <div id="courses" class="items-center justify-center flex-col flex text-center px-6 py10"  >
+      <h3 class=" font-extrabold text-2xl lg:text-3xl max-w-4xl mb-15">Real-world offensive & defensive cyber security training and more...</h3>
+    <p class="max-2-2xl mt-6 mb-15 ">Access over 900 training labs and learning pathways suited to all levels, <br>from the complete beginner to the seasoned hacker. <br><span class="font-bold animate-pulse drop-shadow-[0_0_20px] block lg:inline">NEO COURSES </span> makes learning engaging, entertaining, accessible, and affordable.</p>    
     
   </div>
-    <section class=" mb-25 flex flex-wrap justify-center items-start gap-20 p-5 ">
-  <div class="items-center max-w-xs group cursor-pointer flex flex-col ">
+    <section class=" mb-25 flex flex-wrap justify-center items-start gap-8 lg:gap-20 p-5 ">
+  <div aria-label="course-title-1" class="items-center max-w-xs group cursor-pointer flex flex-col ">
     <div class=" items-center overflow-hidden rounded-md border-2 border-green-500 shadow-[0_0_10px] group-hover:scale-110">
-    <img class=" w-full h-full object-cover " src="src/kali.jpg">
+    <img class=" w-full h-full object-cover " alt="" src="src/kali.jpg">
     </div>
     <h3 class="mt-10 text-2xl font-bold animate-pulse drop-shadow-[0_0_20px]">hacking with Kali Linux</h3>
      <button id="course-1" onclick="course1.showModal()" class="min-h-8 py-5 px-5 mt-18  font-extrabold font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500 ">Course Details</button>
 
     <button class="min-h-8 py-5 px-5 font-extrabold text-2xl mt-8  font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500">Buy</button>
   </div>
-  <div class="max-w-xs group cursor-pointer flex flex-col items-center">
+  <div aria-label="course-title-2" class="max-w-xs group cursor-pointer flex flex-col items-center">
     <div class="overflow-hidden rounded-md border-2 border-green-500 shadow-[0_0_10px] group-hover:scale-110">
-    <img class="transition-transform duration-500 ease-in-out w-full h-full object-cover " src="src/security.jpg">
+    <img alt="" class="transition-transform duration-500 ease-in-out w-full h-full object-cover " src="src/security.jpg">
     </div>
     <h3 class=" min-h-8 text-2xl font-bold animate-pulse drop-shadow-[0_0_20px] mt-10">Cyber Security for beginners</h3>
          <button id="course-2" onclick="course2.showModal()" class="min-h-8 py-5 px-5 mt-18  font-extrabold font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500 ">Course Details</button>
 
     <button class="py-5 px-5 font-extrabold text-2xl  mt-8 font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500">Buy</button>
   </div>
-  <div class="max-w-xs flex-col flex items-center group cursor-pointer ">
+  <div aria-label="course-title-3" class="max-w-xs flex-col flex items-center group cursor-pointer ">
     <div class="overflow-hidden rounded-md border-2 border-green-500 shadow-[0_0_10px] group-hover:scale-110">
-      <img class="transition-transform duration-500 ease-in-out w-full h-full object-cover " src="src/scripting.jpg">
+      <img alt="" class="transition-transform duration-500 ease-in-out w-full h-full object-cover " src="src/scripting.jpg">
     </div>
    
     <h3 class=" min-h-8 text-2xl font-bold animate-pulse drop-shadow-[0_0_20px] mt-17">Advanced Exploitation and scripting Techniques</h3>
@@ -128,19 +128,19 @@
 
     <button class="py-5 px-5 font-extrabold text-2xl  mt-8 font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500">Buy</button> 
   </div>
-  <div class="max-w-xs group cursor-pointer flex flex-col items-center ">
+  <div aria-label="course-title-4" class="max-w-xs group cursor-pointer flex flex-col items-center ">
     <div class="overflow-hidden rounded-md border-2 border-green-500 shadow-[0_0_10px] group-hover:scale-110">
-      <img class="transition-transform duration-500 ease-in-out w-full h-full object-cover " src="src/cryptography.avif">
+      <img alt="" class="transition-transform duration-500 ease-in-out w-full h-full object-cover " src="src/cryptography.avif">
     </div>
     <h3 class=" min-h-8 text-2xl font-bold animate-pulse drop-shadow-[0_0_20px] mt-10">Advanced Network Attack, Web Hacking, and Cryptography</h3>
-     <button id="course-3" onclick="course4.showModal()" class="min-h-8 py-5 px-5 mt-12  font-extrabold font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500 ">Course Details</button>
+     <button id="course-4" onclick="course4.showModal()" class="min-h-8 py-5 px-5 mt-12  font-extrabold font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500 ">Course Details</button>
 
     <button class="py-5 px-5 font-extrabold text-2xl mt-8 font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500">Buy</button>
   </div>
 </section>
 </div>
     </div>
-    <footer id="about">
+    <footer role="about" id="about">
      <div class="mt-10 flex items-center justify-center h-40 bg-black p-4">
 
   <div class="flex items-center gap-6 group select-none">
