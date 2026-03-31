@@ -1,360 +1,436 @@
 <!DOCTYPE html>
-
 <html lang="en" data-theme="matrix">
-  <head>
-    <meta charset="UTF-8" />
 
-    <link rel="stylesheet" href="src/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
 
-    <title>NEO_HACK</title>
-    <meta name="description" content="NEO_HACK is a website, where you can learning Ethical hacking courses. ">
-    <meta name="keywords" content="hack, neo, ethicla-hacking, coding">
+  <link rel="manifest" href="/site.webmanifest">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <meta property="og:title" content="NEO_HACK">
+  <meta property="og:description"
+    content="NEO_HACK is a website, where you can learning Ethical hacking courses. ">
+  <meta property="og:image" content="/screenshot.png">
+  <meta property="og::image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
-<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NEO_HACK">
+  <meta name="twitter:description"
+    content="NEO_HACK is a website, where you can learning Ethical hacking courses. ">
+  <meta name="twitter:image" content="/screenshot.png">
 
-<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
 
-<link rel="manifest" href="/site.webmanifest">
-
-<meta property="og:title" content="NEO_HACK">
-    
-    <meta property="og:description" content="NEO_HACK is a website, where you can learning Ethical hacking courses. ">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="NEO_HACK">
-    <meta name="twitter:description" content="NEO_HACK is a website, where you can learning Ethical hacking courses. ">
-    <meta name="twitter:image" content="/screenshot.png">
-    <meta property="og:image" content="/screenshot.png">
-    <meta property="og::image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
+  <meta property="og:url" content="https://neo-hacker.netlify.app/">
+  <meta property="og:type" content="website">
   <link rel="canonical" href="https://neo-hacker.netlify.app/">
 
-    
-    <meta property="og:url" content="https://neo-hacker.netlify.app/">
-    
-    <meta property="og:type" content="website">
-  
-  </head>
+  <link rel="stylesheet" href="src/style.css" />
 
-  <body>
-    <div role="navigation" class="navbar bg-base-100 shadow-sm">
-  <div class="navbar-start">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+  <title>NEO_HACK</title>
+  <meta name="description"
+    content="NEO_HACK is a website, where you can learning Ethical hacking courses. ">
+  <meta name="keywords" content="hack, neo, ethicla-hacking, coding">
+
+</head>
+
+<body>
+  <div role="navigation" class="navbar bg-base-100 shadow-sm">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul tabindex="-1"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+          <li><a href="#hero">HOME</a></li>
+          <li>
+            <a>COURSES</a>
+            <ul class="p-2">
+              <li><a>FREE COURSES</a></li>
+              <li><a href="#courses">FULL COURSES</a></li>
+            </ul>
+          </li>
+          <li><a href="#about">ABOUT</a></li>
+        </ul>
       </div>
-      <ul
-        tabindex="-1"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a href="#hero" >HOME</a></li>
+      <a class="drop-shadow-[0_0_20px] text-3xl font-extrabold">NEO_HACK</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a alt="#hero">HOME</a></li>
         <li>
-          <a>COURSES</a>
-          <ul class="p-2">
-            <li><a>FREE COURSES</a></li>
-            <li><a href="#courses">FULL COURSES</a></li>
-          </ul>
+          <details>
+            <summary>COURSES</summary>
+            <ul class="p-2 bg-base-100 w-40 z-1">
+              <li><a>FREE COURSES</a></li>
+              <li><a href="#courses">FULL COURSES</a></li>
+            </ul>
+          </details>
         </li>
-        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#about">About</a></li>
       </ul>
     </div>
-    <a class="drop-shadow-[0_0_20px] text-3xl font-extrabold">NEO_HACK</a>
-  </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
-      <li><a alt="#hero">HOME</a></li>
-      <li>
-        <details>
-          <summary>COURSES</summary>
-          <ul class="p-2 bg-base-100 w-40 z-1">
-            <li><a>FREE COURSES</a></li>
-            <li><a href="#courses">FULL COURSES</a></li>
-          </ul>
-        </details>
-      </li>
-      <li><a href="#about">About</a></li>
-    </ul>
-  </div>
-  <div class="navbar-end gap-3">
-    <button aria-label="log-in" onclick="login.showModal()" class="btn  border-green-500 hover:bg-green-500 hover:border-black  btn-outline" >LOG IN</button>
-    <button aria-label="sign-up" onclick="signup.showModal()" class="btn  border-green-500 hover:bg-green-500 hover:border-black  btn-outline">SIGN UP</button>
-  </div>
-</div>
-    <main class="container mx-auto px-6 ">
-        <section id="hero">
-    <div class=" mt-10 mb-10 pt-5">
-      <h1 class="animate-pulse drop-shadow-[0_0_20px] text-3xl font-extrabold justify-center flex">
-        Hallo ich bin Neo
-      </h1>
+    <div class="navbar-end gap-3">
+      <button aria-label="log-in" onclick="login.showModal()"
+        class="btn  border-green-500 hover:bg-green-500 hover:border-black  btn-outline">LOG
+        IN</button>
+      <button aria-label="sign-up" onclick="signup.showModal()"
+        class="btn  border-green-500 hover:bg-green-500 hover:border-black  btn-outline">SIGN
+        UP</button>
     </div>
-    <div class="card lg:card-side bg-base-100 shadow-sm overflow-hidden">
-      <figure>
-        <img
-          class="border-2 border-green-500 w-full object-cover"
-          src="src/matrix.png"
-          alt="Matrix"
-        />
-      </figure>
-      <div class="card-body">
-        <h1 class="card-title">It's Old but Gold</h1>
-        <p>
-          THE ONE AND ONLY!<br />
-          NEO HAT ER UNS PROGRAMIEREN BEIGEBRACHT!<br />KALI LINUX?<br />NGROK?<br />THE
-          FATRAT?<br />EVILDROID?
-        </p>
-        <img alt="Neo" src="src/neo.jpeg"/>
-        <h4 class="text-2xl font-extrabold">MIT UNS LERNST DU ALLES!</h4>
-        <h4>
-          ACHTUNG!WENN DU DIESES BUTTON KLICKST, LANDEST DU DANN DIREKT IN EINER
-          ANDEREN WELT!
-        </h4>
-        <div class="card-actions justify-end">
-          <button aria-label="tavel-button" id="travel" onclick="window.open('travel.html')" class=" border-green-500 hover:bg-green-500 hover:border-black btn btn-outline">Travel</button>
+  </div>
+  <main class="container mx-auto px-6 ">
+    <section id="hero">
+      <div class=" mt-10 mb-10 pt-5">
+        <h1
+          class="animate-pulse drop-shadow-[0_0_20px] text-3xl font-extrabold justify-center flex">
+          Hallo ich bin Neo
+        </h1>
+      </div>
+      <div class="card lg:card-side bg-base-100 shadow-sm overflow-hidden">
+        <figure>
+          <img class="border-2 border-green-500 w-full object-cover" src="src/matrix.png"
+            alt="Matrix" />
+        </figure>
+        <div class="card-body">
+          <h1 class="card-title">It's Old but Gold</h1>
+          <p>
+            THE ONE AND ONLY!<br />
+            NEO HAT ER UNS PROGRAMIEREN BEIGEBRACHT!<br />KALI LINUX?<br />NGROK?<br />THE
+            FATRAT?<br />EVILDROID?
+          </p>
+          <img alt="Neo" src="src/neo.jpeg" />
+          <h4 class="text-2xl font-extrabold">MIT UNS LERNST DU ALLES!</h4>
+          <h4>
+            ACHTUNG!WENN DU DIESES BUTTON KLICKST, LANDEST DU DANN DIREKT IN EINER
+            ANDEREN WELT!
+          </h4>
+          <div class="card-actions justify-end">
+            <button aria-label="tavel-button" id="travel" onclick="window.open('travel.html')"
+              class=" border-green-500 hover:bg-green-500 hover:border-black btn btn-outline">Travel</button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="flex-col justify-center items-center align mt-10">
-      <h3 class="font-extrabold text-5xl">so now let's Learn Coding...</h3>
-      <span class="font-bold my-18 animate-[bounce_0.8s_infinite] ml-5 badge badge-green-500 badge-outline font-mono skew-x-[-25deg] border-r-8 shadow-[10px_0_15px_-3px] p-5">schnall dich an , es wird spannend....</span>
-    </div>
-    </div>
+      <div class="flex-col justify-center items-center align mt-10">
+        <h3 class="font-extrabold text-5xl">so now let's Learn Coding...</h3>
+        <span
+          class="font-bold my-16 animate-[bounce_0.8s_infinite] ml-5 badge bg-green-500 badge-outline font-mono skew-x-12 border-r-8  p-5 inline-block shadow-[10px_0_15px_-3px_rgba(34,197,94,0.5)]">
+          schnall dich an , es wird spannend....
+        </span>
+
+
+
+
+      </div>
+      </div>
     </section>
-    </main>
-    <div id="courses" class="items-center justify-center flex-col flex text-center px-6 py10"  >
-      <h3 class=" font-extrabold text-2xl lg:text-3xl max-w-4xl mb-15">Real-world offensive & defensive cyber security training and more...</h3>
-    <p class="max-2-2xl mt-6 mb-15 ">Access over 900 training labs and learning pathways suited to all levels, <br>from the complete beginner to the seasoned hacker. <br><span class="font-bold animate-pulse drop-shadow-[0_0_20px] block lg:inline">NEO COURSES </span> makes learning engaging, entertaining, accessible, and affordable.</p>    
-    
-  </div>
-    <section class=" mb-25 flex flex-wrap justify-center items-start gap-8 lg:gap-20 p-5 ">
-  <div aria-label="course-title-1" class="items-center max-w-xs group cursor-pointer flex flex-col ">
-    <div class=" items-center overflow-hidden rounded-md border-2 border-green-500 shadow-[0_0_10px] group-hover:scale-110">
-    <img class=" w-full h-full object-cover " alt="" src="src/kali.jpg">
-    </div>
-    <h3 class="mt-10 text-2xl font-bold animate-pulse drop-shadow-[0_0_20px]">hacking with Kali Linux</h3>
-     <button id="course-1" onclick="course1.showModal()" class="min-h-8 py-5 px-5 mt-18  font-extrabold font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500 ">Course Details</button>
+  </main>
+  <div id="courses" class="items-center justify-center flex-col flex text-center px-6 py10">
+    <h3 class=" font-extrabold text-2xl lg:text-3xl max-w-4xl mb-15">Real-world offensive &
+      defensive cyber security training and more...</h3>
+    <p class="max-2-2xl mt-6 mb-15 ">Access over 900 training labs and learning pathways suited to
+      all levels, <br>from the complete beginner to the seasoned hacker. <br><span
+        class="font-bold animate-pulse drop-shadow-[0_0_20px] block lg:inline">NEO COURSES </span>
+      makes learning engaging, entertaining, accessible, and affordable.</p>
 
-    <button class="min-h-8 py-5 px-5 font-extrabold text-2xl mt-8  font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500">Buy</button>
   </div>
-  <div aria-label="course-title-2" class="max-w-xs group cursor-pointer flex flex-col items-center">
-    <div class="overflow-hidden rounded-md border-2 border-green-500 shadow-[0_0_10px] group-hover:scale-110">
-    <img alt="" class="transition-transform duration-500 ease-in-out w-full h-full object-cover " src="src/security.jpg">
-    </div>
-    <h3 class=" min-h-8 text-2xl font-bold animate-pulse drop-shadow-[0_0_20px] mt-10">Cyber Security for beginners</h3>
-         <button id="course-2" onclick="course2.showModal()" class="min-h-8 py-5 px-5 mt-18  font-extrabold font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500 ">Course Details</button>
+  <section class=" mb-25 flex flex-wrap justify-center items-start gap-8 lg:gap-20 p-5 ">
+    <div aria-label="course-title-1"
+      class="items-center max-w-xs group cursor-pointer flex flex-col ">
+      <div
+        class=" items-center overflow-hidden rounded-md border-2 border-green-500 shadow-[0_0_10px] group-hover:scale-110">
+        <img class=" w-full h-full object-cover " alt="" src="src/kali.jpg">
+      </div>
+      <h3 class="mt-10 text-2xl font-bold animate-pulse drop-shadow-[0_0_20px]">hacking with Kali
+        Linux</h3>
+      <button id="course-1" onclick="course1.showModal()"
+        class="min-h-8 py-5 px-5 mt-18  font-extrabold font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500 ">Course
+        Details</button>
 
-    <button class="py-5 px-5 font-extrabold text-2xl  mt-8 font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500">Buy</button>
+      <button
+        class="min-h-8 py-5 px-5 font-extrabold text-2xl mt-8  font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500">Buy</button>
+    </div>
+    <div aria-label="course-title-2"
+      class="max-w-xs group cursor-pointer flex flex-col items-center">
+      <div
+        class="overflow-hidden rounded-md border-2 border-green-500 shadow-[0_0_10px] group-hover:scale-110">
+        <img alt=""
+          class="transition-transform duration-500 ease-in-out w-full h-full object-cover "
+          src="src/security.jpg">
+      </div>
+      <h3 class=" min-h-8 text-2xl font-bold animate-pulse drop-shadow-[0_0_20px] mt-10">Cyber
+        Security for beginners</h3>
+      <button id="course-2" onclick="course2.showModal()"
+        class="min-h-8 py-5 px-5 mt-18  font-extrabold font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500 ">Course
+        Details</button>
+
+      <button
+        class="py-5 px-5 font-extrabold text-2xl  mt-8 font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500">Buy</button>
+    </div>
+    <div aria-label="course-title-3"
+      class="max-w-xs flex-col flex items-center group cursor-pointer ">
+      <div
+        class="overflow-hidden rounded-md border-2 border-green-500 shadow-[0_0_10px] group-hover:scale-110">
+        <img alt=""
+          class="transition-transform duration-500 ease-in-out w-full h-full object-cover "
+          src="src/scripting.jpg">
+      </div>
+
+      <h3 class=" min-h-8 text-2xl font-bold animate-pulse drop-shadow-[0_0_20px] mt-17">Advanced
+        Exploitation and scripting Techniques</h3>
+      <button id="course-3" onclick="course3.showModal()"
+        class="min-h-8 py-5 px-5 mt-12  font-extrabold font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500 ">Course
+        Details</button>
+
+      <button
+        class="py-5 px-5 font-extrabold text-2xl  mt-8 font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500">Buy</button>
+    </div>
+    <div aria-label="course-title-4"
+      class="max-w-xs group cursor-pointer flex flex-col items-center ">
+      <div
+        class="overflow-hidden rounded-md border-2 border-green-500 shadow-[0_0_10px] group-hover:scale-110">
+        <img alt=""
+          class="transition-transform duration-500 ease-in-out w-full h-full object-cover "
+          src="src/cryptography.avif">
+      </div>
+      <h3 class=" min-h-8 text-2xl font-bold animate-pulse drop-shadow-[0_0_20px] mt-10">Advanced
+        Network Attack, Web Hacking, and Cryptography</h3>
+      <button id="course-4" onclick="course4.showModal()"
+        class="min-h-8 py-5 px-5 mt-12  font-extrabold font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500 ">Course
+        Details</button>
+
+      <button
+        class="py-5 px-5 font-extrabold text-2xl mt-8 font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500">Buy</button>
+    </div>
+  </section>
   </div>
-  <div aria-label="course-title-3" class="max-w-xs flex-col flex items-center group cursor-pointer ">
-    <div class="overflow-hidden rounded-md border-2 border-green-500 shadow-[0_0_10px] group-hover:scale-110">
-      <img alt="" class="transition-transform duration-500 ease-in-out w-full h-full object-cover " src="src/scripting.jpg">
-    </div>
-   
-    <h3 class=" min-h-8 text-2xl font-bold animate-pulse drop-shadow-[0_0_20px] mt-17">Advanced Exploitation and scripting Techniques</h3>
-        <button id="course-3" onclick="course3.showModal()" class="min-h-8 py-5 px-5 mt-12  font-extrabold font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500 ">Course Details</button>
-
-    <button class="py-5 px-5 font-extrabold text-2xl  mt-8 font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500">Buy</button> 
   </div>
-  <div aria-label="course-title-4" class="max-w-xs group cursor-pointer flex flex-col items-center ">
-    <div class="overflow-hidden rounded-md border-2 border-green-500 shadow-[0_0_10px] group-hover:scale-110">
-      <img alt="" class="transition-transform duration-500 ease-in-out w-full h-full object-cover " src="src/cryptography.avif">
-    </div>
-    <h3 class=" min-h-8 text-2xl font-bold animate-pulse drop-shadow-[0_0_20px] mt-10">Advanced Network Attack, Web Hacking, and Cryptography</h3>
-     <button id="course-4" onclick="course4.showModal()" class="min-h-8 py-5 px-5 mt-12  font-extrabold font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500 ">Course Details</button>
+  <footer role="about" id="about">
+    <div class="mt-10 flex items-center justify-center h-40 bg-black p-4">
 
-    <button class="py-5 px-5 font-extrabold text-2xl mt-8 font-mono animate-pulse hover:bg-green-500 hover:border-black btn btn-outline outline-green-500">Buy</button>
-  </div>
-</section>
-</div>
-    </div>
-    <footer role="about" id="about">
-     <div class="mt-10 flex items-center justify-center h-40 bg-black p-4">
+      <div class="flex items-center gap-6 group select-none">
 
-  <div class="flex items-center gap-6 group select-none">
-    
-    <div class="w-20 h-20 border-4 border-green-500 rounded-full flex items-center justify-center p-2 overflow-hidden shadow-[0_0_25px_rgba(34,197,94,0.5)] group-hover:shadow-[0_0_40px_rgba(34,197,94,0.8)] transition-all duration-500 bg-black">
-      
-      <div class="grid grid-cols-5 gap-1 font-mono font-black text-[12px] text-green-500 leading-none text-center transform scale-110 opacity-80 group-hover:opacity-100 transition-opacity">
-        <div>0</div><div>1</div><div>0</div><div>1</div><div>0</div>
-          <div>1</div><div>0</div><div>1</div><div>0</div><div>1</div>
-         <div>0</div><div>1</div><div>0</div><div>1</div><div>0</div>
-        
-         <div>1</div><div>0</div><div>1</div><div>0</div><div>1</div>
-         <div>0</div><div>1</div><div>0</div><div>1</div><div>0</div>
+        <div
+          class="w-20 h-20 border-4 border-green-500 rounded-full flex items-center justify-center p-2 overflow-hidden shadow-[0_0_25px_rgba(34,197,94,0.5)] group-hover:shadow-[0_0_40px_rgba(34,197,94,0.8)] transition-all duration-500 bg-black">
+
+          <div
+            class="grid grid-cols-5 gap-1 font-mono font-black text-[12px] text-green-500 leading-none text-center transform scale-110 opacity-80 group-hover:opacity-100 transition-opacity">
+            <div>0</div>
+            <div>1</div>
+            <div>0</div>
+            <div>1</div>
+            <div>0</div>
+            <div>1</div>
+            <div>0</div>
+            <div>1</div>
+            <div>0</div>
+            <div>1</div>
+            <div>0</div>
+            <div>1</div>
+            <div>0</div>
+            <div>1</div>
+            <div>0</div>
+
+            <div>1</div>
+            <div>0</div>
+            <div>1</div>
+            <div>0</div>
+            <div>1</div>
+            <div>0</div>
+            <div>1</div>
+            <div>0</div>
+            <div>1</div>
+            <div>0</div>
+          </div>
+        </div>
+
+        <div class="flex flex-col leading-tight">
+          <span
+            class="text-4xl font-black text-green-500 tracking-tighter uppercase group-hover:text-green-700 transition-colors duration-300">
+            Neo_Hack
+          </span>
+          <span class="text-s font-bold text-green-500 font-mono tracking-[0.3em] pl-1">
+            GLOBAL_ACCESS_GRANTED
+          </span>
+        </div>
+
       </div>
     </div>
 
-    <div class="flex flex-col leading-tight">
-      <span class="text-4xl font-black text-green-500 tracking-tighter uppercase group-hover:text-green-700 transition-colors duration-300">
-        Neo_Hack
-      </span>
-      <span class="text-s font-bold text-green-500 font-mono tracking-[0.3em] pl-1">
-        GLOBAL_ACCESS_GRANTED
-      </span>
+  </footer>
+
+  <dialog id="login" class="modal">
+    <div class="modal-box bg-black border-2 border-green-500">
+      <h3 class="text-lg font-bold text-green-500">SECURE_UPLINK</h3>
+      <div class="py-4 space-y-4">
+        <input type="text" placeholder="ID"
+          class="input input-bordered input-success w-full bg-black" />
+        <input type="password" placeholder="KEY"
+          class="input input-bordered input-success w-full bg-black" />
+      </div>
+      <div class="modal-action">
+        <form method="dialog">
+          <button class="btn btn-ghost text-red-500">CLOSE</button>
+        </form>
+        <button class="btn btn-success bg-black text-green-500">CONNECT</button>
+      </div>
     </div>
 
-  </div>
-</div>
-
-    </footer>
-   
-<dialog id="login" class="modal">
-  <div class="modal-box bg-black border-2 border-green-500">
-    <h3 class="text-lg font-bold text-green-500">SECURE_UPLINK</h3>
-    <div class="py-4 space-y-4">
-       <input type="text" placeholder="ID" class="input input-bordered input-success w-full bg-black" />
-       <input type="password" placeholder="KEY" class="input input-bordered input-success w-full bg-black" />
+    <form method="dialog" class="modal-backdrop">
+      <button>close</button>
+    </form>
+  </dialog>
+  <dialog id="signup" class="modal">
+    <div class="modal-box bg-black border-2 border-green-500">
+      <h3 class="text-lg font-bold text-green-500">INITIALIZE_NEURAL_LINK</h3>
+      <div class="py-4 space-y-4">
+        <input type="email" placeholder="EMAIL_ENCRYPTION"
+          class="input input-bordered input-success w-full bg-black text-green-500" />
+        <input type="password" placeholder="NEW_ACCESS_KEY"
+          class="input input-bordered input-success w-full bg-black text-green-500" />
+      </div>
+      <div class="modal-action">
+        <form method="dialog">
+          <button class="btn btn-ghost text-red-500">ABORT</button>
+        </form>
+        <button class="btn btn-success bg-black text-green-500">CREATE_ID</button>
+      </div>
     </div>
-    <div class="modal-action">
-      <form method="dialog">
-        <button class="btn btn-ghost text-red-500">CLOSE</button>
-      </form>
-      <button class="btn btn-success bg-black text-green-500">CONNECT</button>
-    </div>
-  </div>
-
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
-</dialog>
-<dialog id="signup" class="modal">
-  <div class="modal-box bg-black border-2 border-green-500">
-    <h3 class="text-lg font-bold text-green-500">INITIALIZE_NEURAL_LINK</h3>
-    <div class="py-4 space-y-4">
-       <input type="email" placeholder="EMAIL_ENCRYPTION" class="input input-bordered input-success w-full bg-black text-green-500" />
-       <input type="password" placeholder="NEW_ACCESS_KEY" class="input input-bordered input-success w-full bg-black text-green-500" />
-    </div>
-    <div class="modal-action">
-      <form method="dialog">
-        <button class="btn btn-ghost text-red-500">ABORT</button>
-      </form>
-      <button class="btn btn-success bg-black text-green-500">CREATE_ID</button>
-    </div>
-  </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
-</dialog>
+    <form method="dialog" class="modal-backdrop">
+      <button>close</button>
+    </form>
+  </dialog>
 
 
 
 
 
-<dialog id="course1" class="modal">
-  <div class="modal-box bg-black border-2 border-green-500 max-w-2xl">
-    <h3 class="text-2xl font-black text-green-500 underline">KALI_LINUX_OFFENSIVE</h3>
-    
-    <div class="py-6 space-y-4 font-mono text-sm">
-      <p class="text-green-400 font-bold">[ SYLLABUS_LOADED ]</p>
-      <ul class="list-disc pl-5 text-green-700">
-        <li>Pentesting Methodology</li>
-        <li>Metasploit Framework Mastery</li>
-        <li>Privilege Escalation Techniques</li>
-        <li>Wireless Network Auditing</li>
-      </ul>
-      <div class="divider divider-success"></div>
-      <p class="text-xl text-green-500 font-bold">PRICE: 0.005 BTC</p>
+  <dialog id="course1" class="modal">
+    <div class="modal-box bg-black border-2 border-green-500 max-w-2xl">
+      <h3 class="text-2xl font-black text-green-500 underline">KALI_LINUX_OFFENSIVE</h3>
+
+      <div class="py-6 space-y-4 font-mono text-sm">
+        <p class="text-green-400 font-bold">[ SYLLABUS_LOADED ]</p>
+        <ul class="list-disc pl-5 text-green-700">
+          <li>Pentesting Methodology</li>
+          <li>Metasploit Framework Mastery</li>
+          <li>Privilege Escalation Techniques</li>
+          <li>Wireless Network Auditing</li>
+        </ul>
+        <div class="divider divider-success"></div>
+        <p class="text-xl text-green-500 font-bold">PRICE: 0.005 BTC</p>
+      </div>
+
+      <div class="modal-action">
+        <form method="dialog">
+          <button class="btn btn-ghost text-red-500">BACK_TO_TERMINAL</button>
+        </form>
+        <button class="btn btn-success px-10">ENROLL_NOW</button>
+      </div>
     </div>
 
-    <div class="modal-action">
-      <form method="dialog">
-        <button class="btn btn-ghost text-red-500">BACK_TO_TERMINAL</button>
-      </form>
-      <button class="btn btn-success px-10">ENROLL_NOW</button>
-    </div>
-  </div>
+    <form method="dialog" class="modal-backdrop">
+      <button>close</button>
+    </form>
+  </dialog>
+  <dialog id="course2" class="modal">
+    <div class="modal-box bg-black border-2 border-green-500 max-w-2xl">
+      <h3 class="text-2xl font-black text-green-500 underline">Cyber Secuirty for Beginners</h3>
 
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
-</dialog>
-<dialog id="course2" class="modal">
-  <div class="modal-box bg-black border-2 border-green-500 max-w-2xl">
-    <h3 class="text-2xl font-black text-green-500 underline">Cyber Secuirty for Beginners</h3>
-    
-    <div class="py-6 space-y-4 font-mono text-sm">
-      <p class="text-green-400 font-bold">[ SYLLABUS_LOADED ]</p>
-      <ul class="list-disc pl-5 text-green-700">
-        <li>Administartion</li>
-        <li>Ubuntu Server</li>
-        <li>OpSec</li>
-        <li>Python</li>
-      </ul>
-      <div class="divider divider-success"></div>
-      <p class="text-xl text-green-500 font-bold">PRICE: 0.009 BTC</p>
-    </div>
+      <div class="py-6 space-y-4 font-mono text-sm">
+        <p class="text-green-400 font-bold">[ SYLLABUS_LOADED ]</p>
+        <ul class="list-disc pl-5 text-green-700">
+          <li>Administartion</li>
+          <li>Ubuntu Server</li>
+          <li>OpSec</li>
+          <li>Python</li>
+        </ul>
+        <div class="divider divider-success"></div>
+        <p class="text-xl text-green-500 font-bold">PRICE: 0.009 BTC</p>
+      </div>
 
-    <div class="modal-action">
-      <form method="dialog">
-        <button class="btn btn-ghost text-red-500">BACK_TO_TERMINAL</button>
-      </form>
-      <button class="btn btn-success px-10">ENROLL_NOW</button>
-    </div>
-  </div>
-
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
-</dialog>
-<dialog id="course3" class="modal">
-  <div class="modal-box bg-black border-2 border-green-500 max-w-2xl">
-    <h3 class="text-2xl font-black text-green-500 underline">Advanced Exploitation and scripting Techniques</h3>
-    
-    <div class="py-6 space-y-4 font-mono text-sm">
-      <p class="text-green-400 font-bold">[ SYLLABUS_LOADED ]</p>
-      <ul class="list-disc pl-5 text-green-700">
-        <li>Comprehend and apply Python scripts for hacking purposes</li>
-        <li>Design and integrate keyloggers with backdoors</li>
-        <li>Develop nad implement advanced backdoors with prisistence and command execution</li>
-        <li>Construct brute force attackers and evaluate methods to bypass security measures</li>
-      </ul>
-      <div class="divider divider-success"></div>
-      <p class="text-xl text-green-500 font-bold">PRICE: 0.011 BTC</p>
+      <div class="modal-action">
+        <form method="dialog">
+          <button class="btn btn-ghost text-red-500">BACK_TO_TERMINAL</button>
+        </form>
+        <button class="btn btn-success px-10">ENROLL_NOW</button>
+      </div>
     </div>
 
-    <div class="modal-action">
-      <form method="dialog">
-        <button class="btn btn-ghost text-red-500">BACK_TO_TERMINAL</button>
-      </form>
-      <button class="btn btn-success px-10">ENROLL_NOW</button>
-    </div>
-  </div>
+    <form method="dialog" class="modal-backdrop">
+      <button>close</button>
+    </form>
+  </dialog>
+  <dialog id="course3" class="modal">
+    <div class="modal-box bg-black border-2 border-green-500 max-w-2xl">
+      <h3 class="text-2xl font-black text-green-500 underline">Advanced Exploitation and scripting
+        Techniques</h3>
 
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
-</dialog>
-<dialog id="course4" class="modal">
-  <div class="modal-box bg-black border-2 border-green-500 max-w-2xl">
-    <h3 class="text-2xl font-black text-green-500 underline">Advanced Network Attack, Web Hacking, and Cryptography</h3>
-    
-    <div class="py-6 space-y-4 font-mono text-sm">
-      <p class="text-green-400 font-bold">[ SYLLABUS_LOADED ]</p>
-      <ul class="list-disc pl-5 text-green-700">
-        <li>Master techniques for session hijacking, network-level attacks, and application vulnerabilities.</li>
-        <li>Explore SQL injection, wireless hacking, and cryptographic attack methodologies.</li>
-        <li>Implement web application defenses against OWASP Top 10 vulnerabilities.</li>
-        <li>Defend mobile platforms, IoT systems, and cloud environments with effective countermeasures.</li>
-   </ul>
-      <div class="divider divider-success"></div>
-      <p class="text-xl text-green-500 font-bold">PRICE: 0.009 BTC</p>
+      <div class="py-6 space-y-4 font-mono text-sm">
+        <p class="text-green-400 font-bold">[ SYLLABUS_LOADED ]</p>
+        <ul class="list-disc pl-5 text-green-700">
+          <li>Comprehend and apply Python scripts for hacking purposes</li>
+          <li>Design and integrate keyloggers with backdoors</li>
+          <li>Develop nad implement advanced backdoors with prisistence and command execution</li>
+          <li>Construct brute force attackers and evaluate methods to bypass security measures</li>
+        </ul>
+        <div class="divider divider-success"></div>
+        <p class="text-xl text-green-500 font-bold">PRICE: 0.011 BTC</p>
+      </div>
+
+      <div class="modal-action">
+        <form method="dialog">
+          <button class="btn btn-ghost text-red-500">BACK_TO_TERMINAL</button>
+        </form>
+        <button class="btn btn-success px-10">ENROLL_NOW</button>
+      </div>
     </div>
 
-    <div class="modal-action">
-      <form method="dialog">
- <button class="btn btn-ghost text-red-500">BACK_TO_TERMINAL</button>
-      </form>
-  <button class="btn btn-success px-10">ENROLL_NOW</button>
-    </div>
-  </div>
+    <form method="dialog" class="modal-backdrop">
+      <button>close</button>
+    </form>
+  </dialog>
+  <dialog id="course4" class="modal">
+    <div class="modal-box bg-black border-2 border-green-500 max-w-2xl">
+      <h3 class="text-2xl font-black text-green-500 underline">Advanced Network Attack, Web Hacking,
+        and Cryptography</h3>
 
-  <form method="dialog" class="modal-backdrop">
-   <button>close</button>
-  </form>
-</dialog>
-<script type="module" src="src/register-sw.js"></script>
-  </body>
-  
+      <div class="py-6 space-y-4 font-mono text-sm">
+        <p class="text-green-400 font-bold">[ SYLLABUS_LOADED ]</p>
+        <ul class="list-disc pl-5 text-green-700">
+          <li>Master techniques for session hijacking, network-level attacks, and application
+            vulnerabilities.</li>
+          <li>Explore SQL injection, wireless hacking, and cryptographic attack methodologies.</li>
+          <li>Implement web application defenses against OWASP Top 10 vulnerabilities.</li>
+          <li>Defend mobile platforms, IoT systems, and cloud environments with effective
+            countermeasures.</li>
+        </ul>
+        <div class="divider divider-success"></div>
+        <p class="text-xl text-green-500 font-bold">PRICE: 0.009 BTC</p>
+      </div>
+
+      <div class="modal-action">
+        <form method="dialog">
+          <button class="btn btn-ghost text-red-500">BACK_TO_TERMINAL</button>
+        </form>
+        <button class="btn btn-success px-10">ENROLL_NOW</button>
+      </div>
+    </div>
+
+    <form method="dialog" class="modal-backdrop">
+      <button>close</button>
+    </form>
+  </dialog>
+  <script type="module" src="src/register-sw.js"></script>
+</body>
+
 </html>
