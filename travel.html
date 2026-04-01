@@ -18,7 +18,7 @@
       sizes="32x32"
       href="public/icons/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" href="src/style.css" />
     <link
       rel="icon"
       type="image/png"
@@ -32,11 +32,82 @@
 
     <title>NEO_HACK</title>
   </head>
-  <body class="font-mono">
-    <h1
-      class="drop-shadow-[0_0_20px] mt-30 text-center text-4xl font-extrabold"
+  <body
+    class="bg-black font-mono text-green-500 min-h-screen p-8 flex items-center justify-center"
+  >
+    <container
+      class="max-w-4xl w-full border-2 border-green-900 bg-black/50 p-6 md:p-10 shadow-[0_0_50px_rgba(34,197,94,0.1)] rounded-lg"
     >
-      Welcome to a New World , Where is no more Border.
-    </h1>
+      <div
+        class="flex justify-between items-center mb-8 border-b border-green-900 pb-4"
+      >
+        <div class="text-xs space-y-1">
+          <p>[ STATUS: <span class="animate-pulse">CONNECTED</span> ]</p>
+          <p>[ NODE: SHIBUYA_SUBWAY_EXT_4 ]</p>
+          <p>[ IP: 192.168.0.1 ]</p>
+        </div>
+        <div class="text-right">
+          <h2 class="text-2xl font-black tracking-tighter">NEO_HACK // OS</h2>
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        <h1
+          class="text-4xl md:text-6xl font-black uppercase tracking-tighter text-white drop-shadow-[0_0_10px_rgba(34,197,94,0.8)]"
+        >
+          Welcome to the <br />Other Side.
+        </h1>
+
+        <p
+          class="text-xl leading-relaxed max-w-2xl border-l-4 border-green-500 pl-6 py-2 italic opacity-80"
+        >
+          "I’m going to hang up this phone, and then I’m going to show these
+          people what you don’t want them to see. I’m going to show them a
+          world... without borders."
+        </p>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-4 text-[10px] uppercase opacity-50 font-bold mt-10"
+        >
+          <div>
+            <button
+              class="p-2 cursor-pointer border text-2xl border-green-900/30"
+            >
+              >> BYPASSING_FIREWALL... [OK]
+            </button>
+          </div>
+          <div>
+            <button
+              class="p-2 border curosr-pointer text-2xl border-green-900/30"
+            >
+              >> DECRYPTING_PACKETS... [OK]
+            </button>
+          </div>
+          <div>
+            <button
+              class="p-2 border cursor-pointer text-2xl border-green-900/30"
+            >
+              >> UPLOADING_CONSCIOUSNESS... [98%]
+            </button>
+          </div>
+          <div>
+            <button
+              class="p-2 cursor-pointer border text-2xl border-green-900/30"
+            >
+              >> NEURAL_LINK... [STABLE]
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12">
+        <a
+          href="index.html"
+          class="inline-block px-10 py-4 border-2 border-green-500 text-green-500 font-black hover:bg-green-500 hover:text-black transition-all duration-300 uppercase tracking-[0.3em]"
+        >
+          Return to Matrix
+        </a>
+      </div>
+    </container>
   </body>
 </html>
